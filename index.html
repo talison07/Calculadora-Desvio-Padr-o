@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,59 +8,68 @@
     <link rel="stylesheet" href="./style.css">
     <title>Calculadora DP</title>
 </head>
+
 <body>
-    
-    
+
+
     <div class="container">
         <div id="calculator">
             <h1>Calculadora de Desvio Padrão</h1>
 
             <p>Digite os dados da seguinte forma: 1, 2, 3 ...</p>
-    
+
             <input type="text" id="data">
-    
+
             <button id="calc">Calcular</button>
-        
-        
-            
-                
-                <table id="tableR">
-    
-                    <tbody><tr class="tr1">
-                    
-                    <td> Números totais (N): </td>
-                    <td id="num"></td>
-                    </tr>
-                    
-                    <tr class="tr2">
-                    
-                    <td> Soma dos números: </td>
-                    <td id="soma"></td>
-                    </tr>
-                    
+
+
+
+
+            <table id="tableR">
+
+                <tbody>
                     <tr class="tr1">
-                    
-                    <td> Media Aritimética (médio): </td>
-                    <td id="Media"></td>
+                        <td> Números totais (N): </td>
+                        <td id="num"></td>
                     </tr>
-                    
+
                     <tr class="tr2">
-                    
-                    <td> Desvio padrão(σ): </td>
-                    <td id="dp"></td>
+                        <td> Soma dos números: </td>
+                        <td id="soma"></td>
                     </tr>
-                    
-                    
-                    </tbody>
-                </table>
-    
-           
-    
+
+                    <tr class="tr1">
+                        <td> Media Aritimética (Ma): </td>
+                        <td id="media"></td>
+                    </tr>
+
+                    <tr class="tr2">
+                        <td> Resultado potências: </td>
+                        <td id="potencias"></td>
+                    </tr>
+
+                    <tr class="tr1"></tr>
+                    <td> Soma potências: </td>
+                    <td id="SMpotencias"></td>
+                    </tr>
+
+                    <tr class="tr2">
+                        <td> Desvio padrão(σ): </td>
+                        <td id="dp"></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+
+
         </div>
-        
+
     </div>
-    
-    
-    <script src="/script.js"></script>
+
+
+    <script src="./script.js"></script>
 </body>
+
 </html>

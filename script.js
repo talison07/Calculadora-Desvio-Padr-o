@@ -2,7 +2,9 @@ const input = document.querySelector("#data");
 const button = document.querySelector("#calc")
 const num = document.querySelector("#num")
 const soma = document.querySelector("#soma")
-const media = document.querySelector("#Media")
+const media = document.querySelector("#media")
+const potencias = document.querySelector("#potencias")
+const SMpotencias = document.querySelector("#SMpotencias")
 const desvio = document.querySelector("#dp")
 
 
@@ -34,7 +36,8 @@ function Ma() {
 let Ndados = [];
 
 function nQuadrado() {
-nDados = []
+Ndados = []
+
     dados().forEach((dado) => {
         Ndados.push(Math.pow(dado - Ma(), 2));
     })
@@ -55,10 +58,14 @@ function nRaiz(){
 }
 
 function DP(){
+    nQuadrado();
+
     num.innerHTML = dados().length;
-    media.innerHTML = Ma();
     soma.innerHTML = somar(dados());
-    desvio.innerHTML = nRaiz();
+    potencias.innerHTML = Ndados.map(dado => dado =  " " + dado.toFixed(2));
+    SMpotencias.innerHTML= somar(Ndados).toFixed(4)
+    media.innerHTML = Ma().toFixed(2);
+    desvio.innerHTML = nRaiz().toFixed(4);
 
 }
 
